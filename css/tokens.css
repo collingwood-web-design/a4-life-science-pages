@@ -1,0 +1,35 @@
+/* A4 Life Science — brand tokens
+   Sister reference for fonts only: https://amend.health/ */
+
+:root {
+  --color-highlight: #227a7e;
+  --color-highlight-soft: #e6f2f2;
+  --color-highlight-deep: #1a5f62;
+
+  --color-white: #fafafa;
+  --color-black: #0a0a0a;
+  --color-light-accent: #ffffff;
+  --color-mid-accent: #dcdcdc;
+  --color-text: #121212;
+  --color-text-muted: #4a4a4a;
+  --color-border: #e6e6e6;
+  --color-surface: #f7f8f7;
+  --color-on-highlight: #ffffff;
+
+  --font-sans: "Roboto", Helvetica, Arial, sans-serif;
+  --font-body: var(--font-sans);
+  --font-heading: var(--font-sans);
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3.5rem;
+  --space-xl: 6rem;
+  --space-2xl: 9rem;
+
+  --max-width: 72rem;
+  --content-width: 40rem;
+  --radius: 2px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
