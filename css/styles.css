@@ -603,6 +603,10 @@ p:last-child {
   }
 }
 
+.section--focus .section__intro + .section__intro {
+  margin-top: -0.75rem;
+}
+
 .proof h3 {
   font-size: 1.05rem;
   font-weight: 500;
