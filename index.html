@@ -257,13 +257,50 @@
         <p class="section__intro section__intro--center reveal">
           Whether you are exploring laboratory supply needs or life sciences innovation support, we would like to hear from you.
         </p>
-        <div class="contact-actions reveal">
-          <a class="btn" href="https://www.linkedin.com/in/marcelomorales1/" rel="noopener noreferrer" target="_blank">Talk to our team</a>
-          <a class="btn btn--outline" href="#solutions">Explore solutions</a>
-        </div>
-        <p class="contact-blank reveal">
-          <span class="blank-label">To add:</span> preferred email, phone, and enquiry form destination.
-        </p>
+
+        <form id="contact-form" class="contact-form reveal" novalidate>
+          <div class="contact-form__row">
+            <label class="contact-form__field">
+              <span>First Name</span>
+              <input name="First Name" type="text" autocomplete="given-name" required>
+            </label>
+            <label class="contact-form__field">
+              <span>Last Name</span>
+              <input name="Last Name" type="text" autocomplete="family-name" required>
+            </label>
+          </div>
+
+          <div class="contact-form__row">
+            <label class="contact-form__field">
+              <span>Email</span>
+              <input name="Email" type="email" autocomplete="email" required>
+            </label>
+            <label class="contact-form__field">
+              <span>Organisation</span>
+              <input name="Organisation" type="text" autocomplete="organization">
+            </label>
+          </div>
+
+          <label class="contact-form__field">
+            <span>Message</span>
+            <textarea name="Message" rows="5" required></textarea>
+          </label>
+
+          <input
+            type="text"
+            name="website"
+            data-cwd-honeypot
+            tabindex="-1"
+            autocomplete="off"
+            style="position:absolute;left:-9999px;opacity:0;height:0;width:0"
+            aria-hidden="true"
+          >
+
+          <div class="contact-form__actions">
+            <button type="submit" class="btn btn--light">Send message</button>
+          </div>
+          <p data-cwd-contact-status class="contact-form__status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
@@ -300,7 +337,8 @@
   </footer>
 
   <script src="js/main.js" defer></script>
-    <script
+  <script src="https://web-production-54a6d.up.railway.app/static/cwd-contact.js"></script>
+  <script
     defer
     src="https://media.cwd-cdn.com/monitor/agent/v1/agent.min.js"
     data-cwd-site-id="e0b03a81-d41e-440a-81cb-9ba79bce6e0e"
