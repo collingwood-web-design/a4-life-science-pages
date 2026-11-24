@@ -1037,6 +1037,22 @@ p:last-child {
   color: #7ec8cb;
 }
 
+.contact-blank {
+  margin: 1.35rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 300;
+}
+
+.blank-label {
+  color: #7ec8cb;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-right: 0.35rem;
+}
+
 /* Footer */
 .site-footer {
   padding: var(--space-lg) 0;
