@@ -95,6 +95,13 @@
         </p>
         <div class="heartbeat reveal delay-1" aria-hidden="true">
           <svg class="heartbeat__svg" viewBox="0 0 400 80" role="presentation">
+            <defs>
+              <linearGradient id="heartbeat-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#1a5f62"/>
+                <stop offset="55%" stop-color="#227a7e"/>
+                <stop offset="100%" stop-color="#7ec8cb"/>
+              </linearGradient>
+            </defs>
             <!-- Symmetrical ECG: flat → small wave → center spike → mirrored wave → flat -->
             <path
               class="heartbeat__path"
@@ -153,14 +160,14 @@
     <section id="regions" class="section section--regions" aria-labelledby="regions-heading">
       <div class="regions__globe" aria-hidden="true">
         <svg viewBox="0 0 400 400" role="presentation">
-          <circle cx="200" cy="200" r="148" fill="none" stroke="currentColor" stroke-width="1.25"/>
-          <ellipse cx="200" cy="200" rx="55" ry="148" fill="none" stroke="currentColor" stroke-width="1"/>
-          <ellipse cx="200" cy="200" rx="105" ry="148" fill="none" stroke="currentColor" stroke-width="1"/>
-          <ellipse cx="200" cy="200" rx="148" ry="55" fill="none" stroke="currentColor" stroke-width="1"/>
-          <ellipse cx="200" cy="200" rx="148" ry="105" fill="none" stroke="currentColor" stroke-width="1"/>
-          <line x1="52" y1="200" x2="348" y2="200" stroke="currentColor" stroke-width="1"/>
-          <line x1="200" y1="52" x2="200" y2="348" stroke="currentColor" stroke-width="1"/>
-          <circle cx="200" cy="200" r="148" fill="currentColor" opacity="0.04"/>
+          <circle cx="200" cy="200" r="148" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <ellipse cx="200" cy="200" rx="55" ry="148" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="200" cy="200" rx="105" ry="148" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="200" cy="200" rx="148" ry="55" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="200" cy="200" rx="148" ry="105" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="52" y1="200" x2="348" y2="200" stroke="currentColor" stroke-width="2"/>
+          <line x1="200" y1="52" x2="200" y2="348" stroke="currentColor" stroke-width="2"/>
+          <circle cx="200" cy="200" r="148" fill="currentColor" opacity="0.08"/>
         </svg>
       </div>
       <div class="section__inner section__inner--center">
@@ -293,7 +300,7 @@
   </footer>
 
   <script src="js/main.js" defer></script>
-  <script
+    <script
     defer
     src="https://media.cwd-cdn.com/monitor/agent/v1/agent.min.js"
     data-cwd-site-id="e0b03a81-d41e-440a-81cb-9ba79bce6e0e"
