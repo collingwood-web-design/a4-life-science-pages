@@ -3,22 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A4 Life Science | Laboratory technology &amp; healthcare innovation</title>
+  <title>A4 Life Science | Healthcare innovation</title>
   <meta name="description" content="Serving customers worldwide with advanced laboratory technologies, life science solutions, and trusted support.">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="fr-CA" href="fr/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    try { if (sessionStorage.getItem("a4-boot")) document.documentElement.classList.add("no-boot"); } catch (e) {}
+  </script>
 </head>
 <body>
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot__inner">
+      <div class="boot__logo">
+        <img
+          src="https://media.cwd-cdn.com/a4-life-science/logo/A4-Life-science-logo-white.svg"
+          alt=""
+          width="220"
+          height="161"
+        >
+      </div>
+      <div class="boot__bar"><span></span></div>
+      <p class="boot__tagline">Leaders in health innovation</p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header site-header--overlay">
     <div class="site-header__inner">
       <a class="brand" href="#top" aria-label="A4 Life Science home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__name"><span class="brand__a4">A4</span> Life Science</span>
+        <img
+          class="brand__logo brand__logo--light"
+          src="https://media.cwd-cdn.com/a4-life-science/logo/A4-Life-science-logo-white.svg"
+          alt=""
+          width="140"
+          height="102"
+        >
+        <img
+          class="brand__logo brand__logo--dark"
+          src="https://media.cwd-cdn.com/a4-life-science/logo/A4-Life-science-logo-dark.svg"
+          alt=""
+          width="140"
+          height="102"
+        >
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#focus">Focus</a>
@@ -27,7 +59,11 @@
         <a href="#work">Work</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn--small btn--light" href="#contact">Get a quote</a>
+      <nav class="lang-switch" aria-label="Language">
+        <a href="./" hreflang="en" lang="en" aria-current="page">EN</a>
+        <span aria-hidden="true">|</span>
+        <a href="fr/" hreflang="fr-CA" lang="fr-CA">FR</a>
+      </nav>
     </div>
   </header>
 
@@ -38,7 +74,7 @@
       <div class="hero__inner">
         <p class="hero__badge reveal">Leaders in health innovation</p>
         <h1 id="hero-heading" class="hero__title reveal delay-1">
-          Advancing Laboratory Technology &amp; Healthcare <span class="hero__accent">Innovation</span>
+          Advancing Healthcare <span class="hero__accent">Innovation</span>
         </h1>
         <p class="hero__lede reveal delay-2">
           Serving customers worldwide with advanced laboratory technologies, life science solutions, and trusted support.
@@ -301,8 +337,11 @@
           <p data-cwd-contact-status class="contact-form__status" role="status" aria-live="polite"></p>
         </form>
 
+        <p class="contact-detail reveal">
+          <a href="mailto:info@a4lifesciences.com">info@a4lifesciences.com</a>
+        </p>
         <p class="contact-blank reveal">
-          <span class="blank-label">To add:</span> preferred email and phone number.
+          <span class="blank-label">To add:</span> phone number.
         </p>
       </div>
     </section>
