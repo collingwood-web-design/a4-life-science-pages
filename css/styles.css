@@ -1099,14 +1099,15 @@ p:last-child {
   height: 4.25rem;
   padding: 0.45rem 0.55rem;
   box-sizing: border-box;
-  background: #0a0a0a;
+  background: #ffffff;
+  border: 1px solid rgba(34, 122, 126, 0.12);
   border-radius: 3px;
   text-decoration: none;
 }
 
-.partner__logo--light {
-  background: #f4f6f6;
-  border: 1px solid rgba(34, 122, 126, 0.12);
+.partner__logo--light,
+.partner__logo--dark {
+  background: #ffffff;
 }
 
 .partner__logo img {
