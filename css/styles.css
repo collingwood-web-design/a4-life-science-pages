@@ -1499,26 +1499,33 @@ p:last-child {
   opacity: 0.55;
 }
 
-/* Legal / privacy pages */
+/* Legal / privacy pages — match About typography / colour language */
 .page-legal {
   padding: clamp(6.5rem, 12vw, 8rem) 0 clamp(3rem, 6vw, 4.5rem);
-  background: #fff;
+  background: #f0f0f0;
 }
 
 .legal-prose {
-  max-width: 42rem;
-  margin: 0 auto;
+  max-width: 40rem;
+  margin: 0;
+  text-align: left;
+}
+
+.legal-prose .eyebrow {
+  color: var(--color-highlight);
 }
 
 .legal-prose .section__title {
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.35rem;
+  color: var(--color-black);
 }
 
 .legal-prose__meta {
   margin: 0 0 1.75rem;
-  color: var(--color-text-muted);
-  font-size: 0.92rem;
-  font-weight: 300;
+  color: var(--color-highlight);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .legal-prose h2 {
@@ -1526,6 +1533,7 @@ p:last-child {
   font-size: 1.15rem;
   font-weight: 500;
   letter-spacing: -0.01em;
+  color: var(--color-black);
 }
 
 .legal-prose p,
